@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.9.1)
+  - IQKeyboardManagerSwift (6.5.10)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - ObjectMapper (3.5.3)
+  - SDWebImage (5.13.2):
+    - SDWebImage/Core (= 5.13.2)
+  - SDWebImage/Core (5.13.2)
+  - WebBrowser (0.1.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.2)
+  - IQKeyboardManagerSwift
+  - NVActivityIndicatorView
+  - ObjectMapper (~> 3.4)
+  - SDWebImage (~> 5.0)
+  - WebBrowser
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - SDWebImage
+    - WebBrowser
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
+  WebBrowser: 0248873c77f54e2ac504ece7c2bc8eeb710b5a4f
+
+PODFILE CHECKSUM: 0cbdae3af4f973a6bdf0761c89ddc06b19faaa98
+
+COCOAPODS: 1.11.2

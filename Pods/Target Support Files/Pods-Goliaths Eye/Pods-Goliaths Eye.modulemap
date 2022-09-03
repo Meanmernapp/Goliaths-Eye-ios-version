@@ -1,0 +1,6 @@
+framework module Pods_Goliaths_Eye {
+  umbrella header "Pods-Goliaths Eye-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-BoldItalic.ttf">
+            <string>Barlow-BoldItalic</string>
+        </array>
+        <array key="Barlow-Medium.ttf">
+            <string>Barlow-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoNetworkViewController" customModule="Goliaths_Eye" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6v-Jx-ruN">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="TtT-pf-CjU">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OOPS!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBv-IA-cyN">
+                            <rect key="frame" x="144.5" y="358" width="125" height="48"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QNT-8h-gcT">
+                            <rect key="frame" x="79.5" y="424" width="255.5" height="48"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No internet connection found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfI-XI-UMa">
+                                    <rect key="frame" x="0.0" y="0.0" width="255.5" height="24"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check your connection." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWG-Gp-cuk">
+                                    <rect key="frame" x="0.0" y="24" width="255.5" height="24"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pr4-A7-APy">
+                            <rect key="frame" x="30" y="605" width="354" height="50"/>
+                            <color key="backgroundColor" red="0.31764705879999999" green="0.30588235289999999" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="HSy-Tr-luo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-BoldItalic" family="Barlow" pointSize="14"/>
+                            <color key="tintColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Try Again">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                    <real key="value" value="0.10000000000000001"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="0.0" height="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="tryAgainAction:" destination="-1" eventType="touchUpInside" id="zqd-Wf-mmV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="QNT-8h-gcT" firstAttribute="centerY" secondItem="c6v-Jx-ruN" secondAttribute="centerY" id="3oK-go-dmN"/>
+                        <constraint firstItem="TtT-pf-CjU" firstAttribute="top" secondItem="c6v-Jx-ruN" secondAttribute="top" id="4uH-te-y4f"/>
+                        <constraint firstAttribute="bottom" secondItem="TtT-pf-CjU" secondAttribute="bottom" id="6Ku-RQ-Qko"/>
+                        <constraint firstAttribute="trailing" secondItem="Pr4-A7-APy" secondAttribute="trailing" constant="30" id="8Za-Wp-eXN"/>
+                        <constraint firstItem="Pr4-A7-APy" firstAttribute="top" secondItem="QNT-8h-gcT" secondAttribute="bottom" constant="133" id="B0E-uD-YQK"/>
+                        <constraint firstItem="Pr4-A7-APy" firstAttribute="leading" secondItem="c6v-Jx-ruN" secondAttribute="leading" constant="30" id="ONA-n4-ZYU"/>
+                        <constraint firstItem="JBv-IA-cyN" firstAttribute="centerX" secondItem="c6v-Jx-ruN" secondAttribute="centerX" id="Zcl-zG-biH"/>
+                        <constraint firstAttribute="trailing" secondItem="TtT-pf-CjU" secondAttribute="trailing" id="Zqr-Ae-4P1"/>
+                        <constraint firstItem="QNT-8h-gcT" firstAttribute="top" secondItem="JBv-IA-cyN" secondAttribute="bottom" constant="18" id="aB5-qU-AZX"/>
+                        <constraint firstItem="QNT-8h-gcT" firstAttribute="centerX" secondItem="c6v-Jx-ruN" secondAttribute="centerX" id="dHI-v9-xfY"/>
+                        <constraint firstItem="TtT-pf-CjU" firstAttribute="leading" secondItem="c6v-Jx-ruN" secondAttribute="leading" id="fWP-55-g8i"/>
+                        <constraint firstItem="Pr4-A7-APy" firstAttribute="centerX" secondItem="c6v-Jx-ruN" secondAttribute="centerX" id="q3M-iK-mdw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="c6v-Jx-ruN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1h5-be-C37"/>
+                <constraint firstItem="c6v-Jx-ruN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="A6K-gQ-olD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c6v-Jx-ruN" secondAttribute="trailing" id="ehW-LP-bY4"/>
+                <constraint firstAttribute="bottom" secondItem="c6v-Jx-ruN" secondAttribute="bottom" id="yNu-f7-DeO"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="79"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="360" height="640"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
